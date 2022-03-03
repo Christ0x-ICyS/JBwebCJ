@@ -3,7 +3,7 @@ $black: #000000;
 $primary1: #333333;
 $primary2: #0d9b9b;
 // import fonts
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 @mixin main-font {
   font-family: "Poppins", sans-serif;
@@ -106,12 +106,16 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .65)), url(../images/hero-bg.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(../images/hero-bg.jpg);
   background-size: cover;
 }
 
 .header_section {
-
   .container {
     padding: 0;
   }
@@ -250,7 +254,6 @@ a:focus {
   }
 
   &[aria-expanded="false"] {
-
     .s-1,
     .s-2,
     .s-3 {
@@ -281,7 +284,7 @@ a:focus {
   .detail_box {
     text-align: center;
     color: $white;
-    background-color: rgba($color: #000000, $alpha: .75);
+    background-color: rgba($color: #000000, $alpha: 0.75);
     padding: 45px 75px;
     border: 5px solid $primary2;
 
@@ -318,7 +321,6 @@ a:focus {
 
 // about section
 .about_section {
-
   .row {
     align-items: center;
   }
@@ -341,7 +343,6 @@ a:focus {
       width: calc(100% - 45px);
       height: calc(100% - 45px);
       border: 5px solid $primary2;
-
     }
   }
 
@@ -364,11 +365,9 @@ a:focus {
 // service section
 
 .service_section {
-
   .heading_container {
     margin-bottom: 20px;
   }
-
 
   .box {
     display: flex;
@@ -395,7 +394,6 @@ a:focus {
     }
 
     .detail-box {
-
       h5 {
         color: $primary1;
         font-weight: 600;
@@ -419,7 +417,12 @@ a:focus {
 
 // timing section
 .timing_section {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), url(../images/timing-bg.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url(../images/timing-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -442,9 +445,10 @@ a:focus {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba($color: #000000, $alpha: .5);
+    background-color: rgba($color: #000000, $alpha: 0.5);
 
-    h4 {}
+    h4 {
+    }
 
     h6 {
       font-size: 15px;
@@ -457,7 +461,6 @@ a:focus {
 
 // gallery section
 .gallery_section {
-
   .gallery_container {
     display: flex;
 
@@ -503,7 +506,7 @@ a:focus {
         height: 100%;
         top: 0;
         left: 0;
-        background-color: rgba($color: $primary2, $alpha: .8);
+        background-color: rgba($color: $primary2, $alpha: 0.8);
         z-index: 0;
       }
 
@@ -551,12 +554,14 @@ a:focus {
 
 // end gallery section
 
-
-
-
 /* contact section */
 .contact_section {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), url(../images/contact-bg.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url(../images/contact-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -579,13 +584,11 @@ a:focus {
   }
 
   .contact-form {
-
     h5 {
       color: $white;
       font-weight: 600;
       text-align: center;
     }
-
 
     input {
       width: 100%;
@@ -615,23 +618,18 @@ a:focus {
         @include hero_btn($primary2, $white, 10px, 65px, 0);
       }
     }
-
   }
 }
 
 /* end contact section */
 
-
-
 // client section
 
 .client_section {
-
   .heading_container {
     align-items: center;
 
     h2 {
-
       &::before {
         left: 50%;
         transform: translateX(-50%);
@@ -667,7 +665,6 @@ a:focus {
         border: 5px solid $primary2;
         z-index: 1;
       }
-
     }
   }
 
@@ -707,9 +704,9 @@ a:focus {
   background-color: $primary1;
   color: $white;
 
-.info_col{
-margin-bottom: 45px;
-}
+  .info_col {
+    margin-bottom: 45px;
+  }
   h5 {
     margin-bottom: 25px;
     text-transform: uppercase;
@@ -722,7 +719,6 @@ margin-bottom: 45px;
 
   .info_form_social_row {
     align-items: flex-end;
-
   }
 
   .info_contact {
@@ -744,8 +740,6 @@ margin-bottom: 45px;
       }
     }
   }
-
-
 
   .info_form {
     width: 100%;
@@ -808,8 +802,6 @@ margin-bottom: 45px;
 
 // end info section
 
-
-
 /* footer section*/
 
 .footer_section {
@@ -829,7 +821,5 @@ margin-bottom: 45px;
     }
   }
 }
-
-
 
 // end footer section
